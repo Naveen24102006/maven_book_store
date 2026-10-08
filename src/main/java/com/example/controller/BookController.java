@@ -26,7 +26,7 @@ public class BookController {
 
     // Endpoint to add a new book to the store
     @PostMapping
-    public Book deleteBook(@RequestBody Book book) {
+    public Book addBook(@RequestBody Book book) {
         return bookRepository.save(book);
     }
 }
